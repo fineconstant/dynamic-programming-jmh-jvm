@@ -1,4 +1,4 @@
-## Dynamic programming by the example of the Fibonacci sequence and JMH
+## Dynamic programming by the example of the Fibonacci sequence and measured with JMH
 
 ## JMH Benchmarks
 
