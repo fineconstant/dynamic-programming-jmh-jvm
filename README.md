@@ -55,29 +55,14 @@ class FibonacciJmhBenchmark {
 
 #### [FibonacciNaive](fibonacci/src/main/scala/com/kduda/dynamic/fibonacci/FibonacciNaive.scala)
 ```scala
-import scala.collection.mutable
-
-object FibonacciNaiveMemoization {
+object FibonacciNaive {
   def apply(n: Int): BigInt = {
-    val cache = mutable.WeakHashMap.empty[Int, BigInt]
-
-    def _fibonacci(n: Int): BigInt = {
-      cache.getOrElse(n, n match {
-        case 0 =>
-          val y = BigInt(0)
-          cache.put(n, y)
-          y
-        case 1 =>
-          val y = BigInt(1)
-          cache.put(n, y)
-          y
-        case _ =>
-          val y = _fibonacci(n - 2) + _fibonacci(n - 1)
-          cache.put(n, y)
-          y
-      })
+    n match {
+      case 0 => BigInt(0)
+      case 1 => BigInt(1)
+      case 2 => BigInt(1)
+      case _ => FibonacciNaive(n - 2) + FibonacciNaive(n - 1)
     }
-    _fibonacci(n)
   }
 }
 ```
