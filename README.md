@@ -2,6 +2,8 @@
 
 ## JMH Benchmarks
 
+Profiled with ![https://www.ej-technologies.com/products/jprofiler/overview.html](https://www.ej-technologies.com/images/product_banners/jprofiler_medium.png)
+
 Running benchmarks:
 * `./run-jmh-benchmarks.sh`
 * `./run-jmh-jfr-benchmarks.sh` - additionally records Flight Recorder file from JMH run 
