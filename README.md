@@ -2,7 +2,7 @@
 
 ## JMH Benchmarks
 
-Profiled with ![https://www.ej-technologies.com/products/jprofiler/overview.html](https://www.ej-technologies.com/images/product_banners/jprofiler_medium.png)
+Profiled with [![jprofiler](https://www.ej-technologies.com/images/product_banners/jprofiler_medium.png)](https://www.ej-technologies.com/images/product_banners/jprofiler_medium.png) Java profiler.
 
 Running benchmarks:
 * `./run-jmh-benchmarks.sh`
